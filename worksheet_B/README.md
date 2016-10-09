@@ -8,7 +8,7 @@ WHILE guess_attempts<3                         //ALLOWS LOOP TO RUN WHILE THE PL
     i=0                                        //SETS CHARACTER READ NUMBER I.E. FIRST LETTER = 0
     similarity=0                               //SIMILARITY VALUE OF THE TWO WORDS
     
-     WHILE(I<4)                                   
+     WHILE(I<4)
         IF (guessedinput=randomchar)
             similarity = similarity + 1 
             i = i + 1

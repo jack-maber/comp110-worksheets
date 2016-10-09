@@ -5,7 +5,7 @@ guess_attempts = 0                                    //SETS NUMBER OF PLAYER GU
 
 WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE THE PLAYER STILL HAS GUESSES REMAINING
     guessedletter=randomletter                        //MATCHES PLAYER INPUT TO RANDOM WORD CHARACTER
-    characterposition=0                               //SETS CHARACTER READ NUMBER of RANDOM PASSWORD I.E. FIRST LETTER = 0, SECOND = 1
+    characterposition=0                            //SETS CHARACTER READ NUMBER of RANDOM PASSWORD I.E. FIRST LETTER = 0, SECOND = 1
     similarity=0                                      //SIMILARITY VALUE OF THE TWO WORDS
     
      WHILE(characterposition<4)
@@ -23,7 +23,7 @@ WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE
          guess_attempts = 3                           //MAKES "guess_attempts" EQUAL 3 TO STOP LOOP
        IFELSE
          guess_attempts = guess_attempts + 1          //IF THE WORDS DON'T MATCH COMPLETELY THE LOOP RESTARTS
-       END IF
+       END IF                                         //VALUES CAN BE CHANGED TO ACCOMODATE FOR LONGER PASSWORDS IF NEED BE
 
 END WHILE
 

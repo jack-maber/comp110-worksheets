@@ -28,7 +28,7 @@ WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE
 END WHILE
 
 
-![Screenshot](Capture.png)
+![Screenshot](Capture.JPG)
             
     
     

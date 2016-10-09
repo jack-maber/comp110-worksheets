@@ -27,7 +27,7 @@ WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE
 
 END WHILE
       
-![alt tag](https://www.dropbox.com/s/yxkexwxymm08qfo/Capture.png?dl=0 "Flowchart")          
+https://www.dropbox.com/s/yxkexwxymm08qfo/Capture.png?dl=0        
             
     
     

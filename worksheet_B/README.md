@@ -18,7 +18,7 @@ WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE
         END IF
      END WHILE
 
-       IF (similarity = 4)                            //IF ALL OF THE CHARACTERS MATCH ACCESS IS GRANTED TO THE PLAYER 
+       IF (similarity = 3)                            //IF ALL OF THE CHARACTERS MATCH ACCESS IS GRANTED TO THE PLAYER 
          PRINT "Password Match!"
          GRANT PLAYER ACCESS TO TERMINAL
          guess_attempts = 3                           //MAKES "guess_attempts" EQUAL 3 TO STOP LOOP

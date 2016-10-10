@@ -12,7 +12,7 @@ WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE
      WHILE(characterposition<4)
         IF (guessedletter=randomletter)               //WHILE LOOP COMPARES THE PLAYER INPUTTED LETTER WITH THE RANDOM PASSWORDS LETTER
             similarity = similarity + 1               //IF THE LETTER MATCHES 1 IS ADDED TO THE SIMILARITY SCORE
-            characterposition = characterposition + 1 //1 is add to the characterposition so that when it loops again it doesn't repeat
+            characterposition = characterposition + 1 //1 IS TO ADD THE CHARACTER POSITION SO WHEN IT LOOPS AGAIN IT DOESN'T REPEAT
         ELSE IF                                          
             i = i + 1                                 //IF THE CHARACTER DOESN'T MATCH IT JUST MOVES ONTO THE NEXT CHARACTER
         END IF

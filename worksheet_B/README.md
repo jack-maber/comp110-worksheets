@@ -1,3 +1,4 @@
+```
 START
 
 password = RANDOMLY PICKED FROM BANK/MATRIX
@@ -26,7 +27,7 @@ WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE
        END IF                                         //VALUES CAN BE CHANGED TO ACCOMODATE FOR LONGER PASSWORDS IF NEED BE
 
 END WHILE
-
+```
 
 ![Screenshot](Capture.JPG)
             

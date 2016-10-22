@@ -1,4 +1,12 @@
-**Question 1
+## Question A
 Checks a list for duplicate values
-**Question 2
-Each value has to be checked "N" amount of times as it has to be compared to every other value in the list thus the N value
+## Question B
+Due to the fact that the list is being checked for duplicates, every pair of values in the lists have to be compared to see if they match, and thus are duplicates, thus why the algorithm is quadratic in it's worst case.
+## Question C
+The algorithm is still correct because the values are still being compared as j is simply comparing the value before i, where i has already compared the values so the algorithm will still run correctly.
+## Question D
+Because j is now running behind i, both i and j no longer have to compare every value together and thus the workload is cut in half as j is simply comparing the value behind i, and the if statement is still valid as i and j will still not equal each other.
+## Question E
+The time complexity is no longer quadratic as, both i and j are no longer running through every value of the list and comparing them, j is simply running one step behind i, and thus stops one value behind i and checks for duplicates that way as a duplicate will  be found either way as the algorithm still runs through the entire list. 
+## Question F
+

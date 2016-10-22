@@ -9,4 +9,7 @@ Because j is now running behind i, both i and j no longer have to compare every 
 ## Question E
 The time complexity is no longer quadratic as, both i and j are no longer running through every value of the list and comparing them, j is simply running one step behind i, and thus stops one value behind i and checks for duplicates that way as a duplicate will  be found either way as the algorithm still runs through the entire list. 
 ## Question F
-
+O(n log n)
+Source for Time Complexity:https://wiki.python.org/moin/TimeComplexity
+## Question G
+O(n)

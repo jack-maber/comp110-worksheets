@@ -12,4 +12,6 @@ The time complexity is no longer quadratic as, both i and j are no longer runnin
 O(n log n)
 Source for Time Complexity:https://wiki.python.org/moin/TimeComplexity
 ## Question G
-O(n)
+O(log n)
+## Question H
+

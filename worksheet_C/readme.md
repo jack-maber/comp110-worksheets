@@ -16,4 +16,4 @@ O(log n)  There is only one n in this algorithm because there one For loop so al
 ## Question H
 The second algorithm will run faster as it is logaritmic and thus run naturally faster than the first algorithm which is linear and thus with a large input list will run a lot slower. 
 ## Question I
-If they only have 3 elements to check
+If they only have 3 elements to check; as linear search is quicker than binary with 3 elements.

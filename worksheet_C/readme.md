@@ -12,6 +12,8 @@ The time complexity is no longer quadratic as, both i and j are no longer runnin
 O(n log n)
 Source for Time Complexity:https://wiki.python.org/moin/TimeComplexity
 ## Question G
-O(log n)
+O(log n)  There is only one n in this algorithm because there one For loop so all of the values have to be checked against N once. 
 ## Question H
-
+The second algorithm will run faster as it is logaritmic and thus run naturally faster than the first algorithm which is linear and thus with a large input list will run a lot slower. 
+## Question I
+If they only have 3 elements to check

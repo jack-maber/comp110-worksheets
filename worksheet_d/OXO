@@ -21,28 +21,24 @@ class OxoBoard:
 
 
     def get_winner(self):
-        for i in xrange(3):
-            # Horizontal matches
-            if self.gameboard[0][i] == self.gameboard[1][i] == self.gameboard[2][i]:
-                if self.gameboard[2][i]:
-                    return current_player
-            # Vertical matches
-            elif self.gameboard[i][0] == self.gameboard[i][1] == self.gameboard == [i][2]:
-                if self.gameboard[i][2]:
-                    return current_player
-            # Diagonal matches
-            elif self.gameboard[0][0] == self.gameboard[1][1] == self.gameboard[2][2]:
-                if self.gameboard[2][2]:
-                    return current_player
-            elif self.gameboard[0][2] == self.gameboard[1][1] == self.gameboard[0][0]:
-                if self.gameboard[2][0]:
-                    return current_player
+        for i in range(3):
+            # Checks for horizontal matches 
+            if self.gameboard[0][i] == self.gameboard[1][i] == self.gameboard[2][i] > 0:
+                return current_player
+            # Checks for Vertical matches 
+            elif self.gameboard[i][0] == self.gameboard[i][1] == self.gameboard == [i][2] > 0:
+                return current_player
+            # Checks for Diagonal matches 
+            elif self.gameboard[0][0] == self.gameboard[1][1] == self.gameboard[2][2] > 0:
+                return current_player
+            elif self.gameboard[0][2] == self.gameboard[1][1] == self.gameboard[0][0] > 0:
+                return current_player
         return 0
 
 
     def show(self):
         """ Display the current board state in the terminal. You should not need to edit this. """
-        for y in xrange(3):
+        for y in range(3):
             if y > 0:
                 print "--+---+--"
             for x in xrange(3):
@@ -104,3 +100,4 @@ if __name__ == '__main__':
         else:
             # Move was not played successfully
             print "That square is already filled!"
+

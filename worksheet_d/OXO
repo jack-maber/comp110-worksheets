@@ -21,14 +21,14 @@ class OxoBoard:
 
 
     def get_winner(self):
-        for i in range(3):
-            # Checks for horizontal matches 
+        for i in range(3): 
+            # Checks for horizontal matches
             if self.gameboard[0][i] == self.gameboard[1][i] == self.gameboard[2][i] > 0:
                 return current_player
-            # Checks for Vertical matches 
+            # Checks for Vertical matches
             elif self.gameboard[i][0] == self.gameboard[i][1] == self.gameboard == [i][2] > 0:
                 return current_player
-            # Checks for Diagonal matches 
+            # Checks for Diagonal matches
             elif self.gameboard[0][0] == self.gameboard[1][1] == self.gameboard[2][2] > 0:
                 return current_player
             elif self.gameboard[0][2] == self.gameboard[1][1] == self.gameboard[0][0] > 0:

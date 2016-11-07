@@ -7,31 +7,31 @@ class OxoBoard:
 
     def set_square(self, x, y, mark):
         if self.gameboard[x][y] == 0:  #Checks if a square is empty, if so it's filled with mark, if not False is returned
-            self.gameboard = mark
+            self.gameboard[x][y] = mark
             return True
         else:
             return False
 
     def is_board_full(self):
-        for y in range(3):  #Returns a false boolean if any squares on the board are empty
-            for x in range(3):
-                if self.gameboard == 0:
+        for x in range(3):  #Returns a false boolean if any squares on the board are empty
+            for y in range(3):
+                if self.gameboard[x][y] == 0:
                     return False
-            return True
+        return True
 
 
     def get_winner(self):
-        for i in range(3): 
-            # Checks for horizontal matches
+        for i in range(3):
+            # Checks for Vertical matches, >0 checks that none of the squares are empty
             if self.gameboard[0][i] == self.gameboard[1][i] == self.gameboard[2][i] > 0:
                 return current_player
-            # Checks for Vertical matches
+            # Checks for Horizontal matches
             elif self.gameboard[i][0] == self.gameboard[i][1] == self.gameboard == [i][2] > 0:
                 return current_player
             # Checks for Diagonal matches
-            elif self.gameboard[0][0] == self.gameboard[1][1] == self.gameboard[2][2] > 0:
-                return current_player
             elif self.gameboard[0][2] == self.gameboard[1][1] == self.gameboard[0][0] > 0:
+                return current_player
+            elif self.gameboard[0][0] == self.gameboard[1][1] == self.gameboard[2][2] > 0:
                 return current_player
         return 0
 
@@ -100,4 +100,5 @@ if __name__ == '__main__':
         else:
             # Move was not played successfully
             print "That square is already filled!"
+
 

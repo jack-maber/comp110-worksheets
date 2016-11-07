@@ -24,15 +24,15 @@ class OxoBoard:
         for i in range(3):
             # Checks for Vertical matches, >0 checks that none of the squares are empty
             if self.gameboard[0][i] == self.gameboard[1][i] == self.gameboard[2][i] > 0:
-                return current_player
+                return self.gameboard[0][i]
             # Checks for Horizontal matches
             elif self.gameboard[i][0] == self.gameboard[i][1] == self.gameboard[i][2] > 0:
-                return current_player
+                return self.gameboard[i][0]
             # Checks for Diagonal matches
-            elif self.gameboard[0][2] == self.gameboard[1][1] == self.gameboard[0][0] > 0:
-                return current_player
+            elif self.gameboard[0][2] == self.gameboard[1][1] == self.gameboard[2][0] > 0:
+                return self.gameboard[0][2]
             elif self.gameboard[0][0] == self.gameboard[1][1] == self.gameboard[2][2] > 0:
-                return current_player
+                return self.gameboard[0][0]
         return 0
 
 

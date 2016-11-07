@@ -100,5 +100,3 @@ if __name__ == '__main__':
         else:
             # Move was not played successfully
             print "That square is already filled!"
-
-

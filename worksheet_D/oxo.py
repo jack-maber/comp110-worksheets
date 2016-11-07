@@ -26,7 +26,7 @@ class OxoBoard:
             if self.gameboard[0][i] == self.gameboard[1][i] == self.gameboard[2][i] > 0:
                 return current_player
             # Checks for Horizontal matches
-            elif self.gameboard[i][0] == self.gameboard[i][1] == self.gameboard == [i][2] > 0:
+            elif self.gameboard[i][0] == self.gameboard[i][1] == self.gameboard[i][2] > 0:
                 return current_player
             # Checks for Diagonal matches
             elif self.gameboard[0][2] == self.gameboard[1][1] == self.gameboard[0][0] > 0:

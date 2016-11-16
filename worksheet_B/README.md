@@ -3,10 +3,11 @@ START
 
 password = RANDOMLY PICKED FROM BANK/MATRIX
 guess_attempts = 0                                    //SETS NUMBER OF PLAYER GUESSES AT LOWEST VALUE
+i = 0                                                 //USED FOR CHECKING THE LETTERS IN THE GUESSED WORD I.E. 0 = FIRST LETTER 
 
 WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE THE PLAYER STILL HAS GUESSES REMAINING
     guessedletter=randomletter                        //MATCHES PLAYER INPUT TO RANDOM WORD CHARACTER
-    characterposition=0                            //SETS CHARACTER READ NUMBER of RANDOM PASSWORD I.E. FIRST LETTER = 0, SECOND = 1
+    characterposition=0                               //SETS CHARACTER READ NUMBER of RANDOM PASSWORD I.E. FIRST LETTER = 0, SECOND = 1
     similarity=0                                      //SIMILARITY VALUE OF THE TWO WORDS
     
      WHILE(characterposition<4)
@@ -18,7 +19,7 @@ WHILE (guess_attempts<3)                              //ALLOWS LOOP TO RUN WHILE
         END IF
      END WHILE
 
-       IF (similarity = 3)                            //IF ALL OF THE CHARACTERS MATCH ACCESS IS GRANTED TO THE PLAYER 
+       IF (similarity = 3)                            //NUMBER OF LETTERS CAN BE SCALED FOR LONGER WORDS BY CHANGING LETTER 
          PRINT "Password Match!"
          GRANT PLAYER ACCESS TO TERMINAL
          guess_attempts = 3                           //MAKES "guess_attempts" EQUAL 3 TO STOP LOOP

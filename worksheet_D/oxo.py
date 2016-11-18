@@ -17,7 +17,7 @@ class OxoBoard:
             for y in range(3):
                 if self.gameboard[x][y] == 0:
                     return False
-        return True
+        return True #If we reach this point without finding an empty square, the board must be full
 
 
     def get_winner(self):

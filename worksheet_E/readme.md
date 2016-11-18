@@ -36,4 +36,13 @@ The inner loop then is tied to S3 and as S3 is set to equal S0 and thus also run
 
 And thus by running this loop it is timesing the value of s1 by the value of S3, then after that it is set to equal S2 so that at the end of the first run s1 equals 1 and thus is equal to the factorial of the value of S0 as the code goes on. 
 
+##Question E
+```
+addi $s0, $zero, 10
+addi $s1, $zero, 1
 
+inner:
+    mult $s1, $s1, $s0
+    addi $s0, $s0, -1
+    bne $s0, $zero,inner 
+```
